@@ -14,7 +14,7 @@ allprojects {
 ...
 
 dependencies {
-    implementation 'com.github.prongbang:animatedrecyclerview:1.0.0'
+    implementation 'com.github.prongbang:animatedrecyclerview:1.0.5'
 }
 ```
 
