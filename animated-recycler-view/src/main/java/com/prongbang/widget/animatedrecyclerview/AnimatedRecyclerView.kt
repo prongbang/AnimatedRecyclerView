@@ -1,4 +1,4 @@
-package com.prongbang.widget
+package com.prongbang.widget.animatedrecyclerview
 
 import android.support.v7.widget.RecyclerView
 import android.view.View

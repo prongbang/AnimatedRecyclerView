@@ -2,13 +2,12 @@ package com.prongbang.animatedrecyclerview
 
 import android.content.Context
 import android.graphics.Color
-import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatTextView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.prongbang.widget.AnimatedRecyclerView
+import com.prongbang.widget.animatedrecyclerview.AnimatedRecyclerView
 
 /**
  * Created by prongbang on 2/15/2018 AD.
