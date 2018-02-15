@@ -2,6 +2,7 @@ package com.prongbang.widget
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
 import java.util.*
@@ -12,7 +13,11 @@ import java.util.*
  */
 class AnimatedRecyclerView {
 
-    abstract class Adapter<T : RecyclerView.ViewHolder> : RecyclerView.Adapter<T>() {
+    open class Adapter<T : RecyclerView.ViewHolder> : RecyclerView.Adapter<T>() {
+
+        override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): T? = null
+
+        override fun getItemCount(): Int = 0
 
         protected var mLastPosition = -1
 
