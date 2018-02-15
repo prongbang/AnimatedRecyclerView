@@ -20,6 +20,7 @@ class GroupAdapter(private val context: Context) : AnimatedRecyclerView.Adapter<
 
     fun setData(mGroups: ArrayList<String>) {
         this.mGroups = mGroups
+        this.restartAnimation()
         notifyDataSetChanged()
     }
 
