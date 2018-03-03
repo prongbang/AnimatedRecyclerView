@@ -1,6 +1,8 @@
 # Animated Recycler View
 Animated Recycler View Android Library
 
+![screenshot gif](https://github.com/prongbang/AnimatedRecyclerView/blob/master/screenshots/screenshots.gif?raw=true)
+
 ## Download
 > build.gradle
 ```gradle
