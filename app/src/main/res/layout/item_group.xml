@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="?attr/selectableItemBackground"
-    android:padding="16dp">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="?attr/selectableItemBackground"
+	android:padding="16dp"
+	tools:background="@android:color/holo_blue_light">
 
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/tvName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#f7f7f7"
-        android:text="Name" />
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Name"
+		android:textColor="#f7f7f7" />
 
 </LinearLayout>

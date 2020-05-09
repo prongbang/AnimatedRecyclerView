@@ -1,8 +1,8 @@
 package com.prongbang.animatedrecyclerview
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
                 Log.i(MainActivity::class.java.simpleName, group)
             }
         })
-        rvGroupName.layoutManager = GridLayoutManager(this, 4)
+        rvGroupName.layoutManager = androidx.recyclerview.widget.GridLayoutManager(
+		        this, 4)
         rvGroupName.adapter = adapter
 
         // group data

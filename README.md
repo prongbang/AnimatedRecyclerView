@@ -5,19 +5,24 @@ Animated Recycler View Android Library
 
 ## Download
 > build.gradle
-```gradle
+```groovy
 allprojects {
     repositories {
-        ...
         maven { url 'https://jitpack.io' }
     }
 }
+```
 
-...
+### Support Library
 
-dependencies {
-    implementation 'com.github.prongbang:animatedrecyclerview:1.0.5'
-}
+```groovy
+implementation 'com.github.prongbang:animatedrecyclerview:1.0.5'
+```
+
+### AndroidX
+
+```groovy
+implementation 'com.github.prongbang:animatedrecyclerview:2.0.0'
 ```
 
 ## How to use
@@ -33,7 +38,7 @@ class GroupAdapter(private val context: Context) : AnimatedRecyclerView.Adapter<
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder? {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(context).inflate(R.layout.item_group, parent, false)
 
         return ViewHolder(v)
@@ -126,10 +131,11 @@ class GroupAdapter(private val context: Context) : AnimatedRecyclerView.Adapter<
 
 > activity_main.xml
 ```xml
-<android.support.v7.widget.RecyclerView
+<androidx.recyclerview.widget.RecyclerView
     android:id="@+id/rvGroupName"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    tools:listitem="@layout/item_group" />
 ```
 > item_group.xml
 ```xml
@@ -140,7 +146,7 @@ class GroupAdapter(private val context: Context) : AnimatedRecyclerView.Adapter<
     android:background="?attr/selectableItemBackground"
     android:padding="16dp">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
